@@ -1,1 +1,14 @@
-README
+PHPNotePad
+
+The idea is very simple: to store information really easily without loging in or
+anything and to have that information really easily accessible on the web 
+anywhere, at any time. I thought what better way to do that than a simple 
+notepad. This is a very simple web based notepad. Just start typing. That's it. 
+It automatically saves text. There is nothing else to do. And you can access it 
+from anywhere and any place.
+
+
+Homepage:http://tarunchaudhry.com/phpnotepad
+Demo:http://tarunchaudhry.com/phpnotepad/demo
+
+Edit config.php with mySQL info.
