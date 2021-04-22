@@ -12,11 +12,11 @@ function dberror(){
 if($result = $mysqli->query('show tables like "'.TBL_PREFIX.'notes";')){
 	if($result->num_rows < 1){
 		echo "Created Table";
-		if(!$mysqli->query("CREATE TABLE '".DB_NAME."'.'".TBL_PREFIX."notes' (
-			'time' int(10) unsigned NOT NULL,
-			'ip' varchar(15) NOT NULL DEFAULT '',
-			'value' longtext NOT NULL DEFAULT '',
-			'u' varchar(255) NOT NULL DEFAULT ''
+		if(!$mysqli->query("CREATE TABLE ".DB_NAME.".".TBL_PREFIX."notes (
+			time int(10) unsigned NOT NULL,
+			ip varchar(15) NOT NULL DEFAULT '',
+			value longtext NOT NULL DEFAULT '',
+			u varchar(255) NOT NULL DEFAULT ''
 			) ENGINE=MyISAM;'")){
 		dberror();
 			}
